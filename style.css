@@ -24,6 +24,96 @@
 .header {
   background-color: var(--lighter-color);
   grid-column: 2 / 3;
+
+  box-shadow: 0 2px 4px 0 rgba(15, 15, 15, 0.2);
+  z-index: 100;
+
+
+  display: grid;
+  padding: 20px 50px;
+  gap: 2em;
+}
+
+.top, .bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#search {
+  margin-left: 15px;
+  margin-right: auto;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--light-color);
+  padding: 8px 18px;
+  width: 80%;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5em;
+  width: 100%;
+}
+
+.avatar {
+  background-color: var(--accent-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.greet {
+  font-weight: 700;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.bottom-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-left .avatar {
+  height: 70px;
+  width: 70px;
+}
+
+.profile-greeting {
+  margin-left: 15px;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.bottom-right .button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--dark-color);
+  color: var(--lighter-color);
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 /* SIDEBAR */
