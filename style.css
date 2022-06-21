@@ -220,3 +220,41 @@
 .actions span {
   font-size: 1.8em;
 }
+
+.right-content {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.announcements .card, .trending .card {
+  border: none;
+}
+
+.announcement p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  width: 200px;
+  font-size: 0.8em;
+}
+
+.announcement {
+  padding: 10px;
+}
+.announcement + .announcement {
+  border-top: 1px solid rgb(172, 168, 168);
+}
+
+
+.account {
+  display: flex;
+  gap: 20px;
+}
+
+.fullname {
+  color: rgb(172, 168, 168);
+}
