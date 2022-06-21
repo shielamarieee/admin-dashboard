@@ -119,7 +119,54 @@
 /* SIDEBAR */
 .sidebar {
   background-color: var(--dark-color);
+  color: var(--lighter-color);
   grid-row: 1 / 3;
+
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(15, 15, 15, 0.2);
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title {
+  font-size: 1.75em;
+}
+
+.dashboard-icon {
+  font-size: 3em;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.menu {
+  margin-top: 50px;
+  list-style-type: none;
+  display: grid;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.home-icon {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 /* MAIN CONTENT */
